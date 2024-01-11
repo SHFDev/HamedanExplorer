@@ -37,6 +37,7 @@ public partial class FoodDetail_View : ContentPage
 
     private void ImageButton_Clicked(object sender, EventArgs e)
     {
+            
         var img = imgbookmark.Source.ToString().Replace("File:", "").TrimStart();
         if (img == "save.svg")
         {

@@ -106,9 +106,6 @@
                 <Label Text="رستوران عمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارترتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعماعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعتعمارت" FontSize="Subtitle" HorizontalOptions="Start" TextColor="Black" Margin="20"/>
             </VerticalStackLayout>
             
-            
-            
-
 
             <!--<HorizontalStackLayout Margin="20,10,20,20">
                 <
@@ -157,6 +154,7 @@
             
 
             <FlexLayout Margin="20,10,20,0" JustifyContent="SpaceBetween">
+              
                 <HorizontalStackLayout>
                     <Label
                  FontAttributes="Bold"
@@ -170,7 +168,8 @@
                  Text="&gt;"
                  TextColor="LightGray"/>
                 </HorizontalStackLayout>
-                <Label
+               
+             <Label
              Margin="0,0"
              FontAttributes="Bold"
              FontSize="18"
@@ -201,8 +200,6 @@
                                 </Grid>
 
                                 <VerticalStackLayout Grid.Row="1" Margin="10">
-
-                                    
                                     <!--<Label Margin="0,0,0,6" Text="00:10:22" />-->
                                     
                                     <Label Text="{Binding Star}" FontSize="Large" Margin="10,0,0,0" />
@@ -215,7 +212,6 @@
                                 </VerticalStackLayout>
 
                             </Grid>
-                            
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

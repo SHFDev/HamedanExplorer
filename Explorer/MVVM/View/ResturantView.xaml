@@ -15,25 +15,96 @@
             <CollectionView ItemsSource="{Binding Restaurants}" x:Name="CVResdata">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Margin="10">
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                                <Label Text="★" FontSize="Large"/>
-                                <Label Text="⭐" FontSize="Body"/>
-                                <Label Text="⭐" FontSize="Large"/>
-                                <Label Text="☆" FontSize="Large"/>
-                                <Label Text="☆" FontSize="Large"/>
-                            </StackLayout>
-                            <Button  Command="{Binding Path=BindingContext.Res,Source={Reference CVResdata}}"
-                             CommandParameter="{Binding .}" Text="{Binding Name}" FontSize="18" FontAttributes="Bold" />
-                            <Label Text="{Binding Rating, StringFormat='امتیاز: {0:F1}'}" FontSize="14" />
-                        </StackLayout>
+
+                        <Border
+                        Margin="10,10,10,10"
+                        Padding="0"
+                        Background="LightGray"
+                        HeightRequest="200"
+                        HorizontalOptions="Start"
+                        StrokeThickness="1"
+                        VerticalOptions="End"
+                        WidthRequest="370">
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="18,18,18,18" />
+                            </Border.StrokeShape>
+
+                            <Grid>
+
+                                <Image
+                             HeightRequest="130"
+                             HorizontalOptions="Center"
+                             Source="test" WidthRequest="450" Aspect="AspectFill" Margin="0,0,0,70" />
+                                <!--Source="leclerc.jpg"-->
+
+                                <Frame
+                             CornerRadius="0"
+                               HeightRequest="220">
+
+                                    <Frame.Background>
+                                        <LinearGradientBrush EndPoint="0,1">
+                                            <GradientStop Offset="0.1" Color="Transparent" />
+                                            <GradientStop Offset="1.0" Color="#15151d" />
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                </Frame>
+
+                                <Button  Command="{Binding Path=BindingContext.Res,Source={Reference CVResdata}}"
+                                 CommandParameter="{Binding .}" FontAttributes="Bold"
+                                         BackgroundColor="DarkGray" HeightRequest="70" Margin="0,130,0,0" />
+
+                                <Label Text="{Binding Name}" FontSize="18"  Margin="60,155,0,0" TextColor="Wheat"/>
+                               
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="230,130,0,0">
+                                    <Label Text="★" FontSize="Large"/>
+                                    <Label Text="★" FontSize="Body"/>
+                                    <Label Text="⭐" FontSize="Large"/>
+                                    <Label Text="☆" FontSize="Large"/>
+                                    <Label Text="☆" FontSize="Large"/>
+                                </StackLayout>
+
+
+                                <Border
+                             Padding="0"
+                             Background="LightGray"
+                             HeightRequest="70"
+                             HorizontalOptions="Start"
+                             StrokeThickness="0"
+                             VerticalOptions="End"
+                             WidthRequest="70"
+                             Margin="10,0,0,45" >
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="31,31,31,31" />
+                                    </Border.StrokeShape>
+
+                               <Image
+                                VerticalOptions="Center"
+                                Source="restorant.jpg" />
+
+                                </Border>
+
+                                <StackLayout Margin="10,140,10,0" >
+
+                                    <!---->
+
+                                </StackLayout>
+
+                            </Grid>
+
+                        </Border>
+
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+
         </ContentPage>
+
         <page:bookmarke  Title="ذخیره شده ها  " IconImageSource="bookmark.png" />
 
     </TabbedPage.Children>
-    
+
 
 </TabbedPage>
