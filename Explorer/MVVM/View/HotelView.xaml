@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Explorer.MVVM.View.HotelView"
              xmlns:page="clr-namespace:Explorer.MVVM.View"
-             Title="رستوران ها"
+             Title="هتل ها "
              FlowDirection="RightToLeft">
 
     <TabbedPage.Children>
 
-        <ContentPage  Title="رستوران ها " IconImageSource="restorant.jpg">
+        <ContentPage  Title="هتل ها" IconImageSource="restorant.jpg" >
 
             <CollectionView ItemsSource="{Binding Restaurants}" x:Name="CVResdata">
                 <CollectionView.ItemTemplate>
@@ -30,14 +30,33 @@
 
                             <Grid>
 
-                                <Image
-                             HeightRequest="130"
-                             HorizontalOptions="Center"
-                             Source="test" WidthRequest="450" Aspect="AspectFill" Margin="0,0,0,70" />
-                                <!--Source="leclerc.jpg"-->
+             
 
-                                <Frame
-                             CornerRadius="0"
+                            <Border
+                                Padding="0"
+                                Background="LightGray"
+                                HeightRequest="185"
+                                HorizontalOptions="Start"
+                                StrokeThickness="0"
+                                VerticalOptions="End"
+                                WidthRequest="150"
+                                Margin="10,0,60,8" >
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="34,34,34,34" />
+                                    </Border.StrokeShape>
+
+                                    <Image
+                                     HeightRequest="185"
+                                     HorizontalOptions="Center"
+                                     Source="boali" WidthRequest="150" Aspect="AspectFill"   />
+
+                                </Border>
+                                
+                                
+                                <!--Source="leclerc.jpg"-->
+                              <Frame
+                               CornerRadius="0"
                                HeightRequest="220">
                                     <Frame.Background>
                                         <LinearGradientBrush EndPoint="0,1">
@@ -49,38 +68,18 @@
 
                                 <Button  Command="{Binding Path=BindingContext.Res,Source={Reference CVResdata}}"
                                  CommandParameter="{Binding .}" FontAttributes="Bold"
-                                         BackgroundColor="DarkGray" HeightRequest="70" Margin="0,130,0,0" />
+                                 BackgroundColor="DarkGray" HeightRequest="37" WidthRequest="180" Margin="155,130,0,0" Text="نمایش جزیات"  />
 
-                                <Label Text="{Binding Name}" FontSize="18"  Margin="60,155,0,0" TextColor="Wheat"/>
+                                <Label Text="{Binding Name}" FontSize="18"  Margin="175,20,0,0" TextColor="Wheat"/>
+                                <Label Text="{Binding Name,StringFormat=' آدرس :  {0}'}" FontSize="12"  Margin="175,60,0,0" TextColor="Wheat"/>
 
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="230,130,0,0">
-                                    <Label Text="★" FontSize="Large"/>
-                                    <Label Text="★" FontSize="Body"/>
-                                    <Label Text="⭐" FontSize="Large"/>
-                                    <Label Text="☆" FontSize="Large"/>
-                                    <Label Text="☆" FontSize="Large"/>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="-191,130,0,-6">
+                                    <Label Text="⭐" FontSize="15"/>
+                                    <Label Text="⭐" FontSize="15"/>
+                                    <Label Text="⭐" FontSize="15"/>
+                                    <Label Text="⭐" FontSize="15"/>
+                                    <Label Text="⭐" FontSize="15"/>
                                 </StackLayout>
-
-
-                                <Border
-                             Padding="0"
-                             Background="LightGray"
-                             HeightRequest="70"
-                             HorizontalOptions="Start"
-                             StrokeThickness="0"
-                             VerticalOptions="End"
-                             WidthRequest="70"
-                             Margin="10,0,0,45" >
-
-                                    <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="31,31,31,31" />
-                                    </Border.StrokeShape>
-
-                                    <Image
-                                VerticalOptions="Center"
-                                Source="restorant.jpg" />
-
-                                </Border>
 
                                 <StackLayout Margin="10,140,10,0" >
 

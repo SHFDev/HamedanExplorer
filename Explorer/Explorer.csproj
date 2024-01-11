@@ -76,6 +76,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MVVM\View\RoomDetail_View.xaml.cs">
+	    <DependentUpon>RoomDetail_View.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="MVVM\View\Hotel_bookmarke.xaml.cs">
 	    <DependentUpon>Hotel_bookmarke.xaml</DependentUpon>
 	  </Compile>
@@ -88,6 +91,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MVVM\View\RoomDetail_View.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\Hotel_bookmarke.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

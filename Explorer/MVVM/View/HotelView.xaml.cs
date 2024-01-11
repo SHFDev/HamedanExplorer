@@ -10,4 +10,9 @@ public partial class HotelView : TabbedPage
         InitializeComponent();
         BindingContext = new ResturantViewModel();
     }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
