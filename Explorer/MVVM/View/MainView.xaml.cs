@@ -31,6 +31,7 @@ public partial class MainView : ContentPage
 
     private void Button_Clicked_Hotel(object sender, EventArgs e)
     {
+        Navigation.PushAsync(new HotelView());
 
     }
 }

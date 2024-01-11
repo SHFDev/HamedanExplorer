@@ -55,16 +55,12 @@
                                          BackgroundColor="DarkGray" HeightRequest="70" Margin="0,130,0,0" />
 
                                 <Label Text="{Binding Name}" FontSize="18"  Margin="60,155,0,0" TextColor="Wheat"/>
-                                <Label Text="{Binding Star}" FontSize="18"  Margin="60,155,0,0" />
+                               
 
                                 
-                                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="230,130,0,0">
-                                    <Label Text="★" FontSize="Large"/>
-                                    <Label Text="★" FontSize="Body"/>
-                                    <Label Text="⭐" FontSize="Large"/>
-                                    <Label Text="☆" FontSize="Large"/>
-                                    <Label Text="☆" FontSize="Large"/>
-                                </StackLayout>-->
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="230,130,0,0">
+                                    <Label Text="{Binding Star}" FontSize="18"  />
+                                </StackLayout>
 
 
                                 <Border
