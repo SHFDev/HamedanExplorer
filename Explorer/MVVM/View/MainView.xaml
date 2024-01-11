@@ -5,13 +5,7 @@
              Title="MainView">
     <Grid>
         <Image Source="bo_ali.jpg" Opacity="0.8" Aspect="AspectFill"/>
-  
-        <!--<Grid.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#663300" Offset="0.1"/>
-                <GradientStop Color="#996633" Offset="1.0"/>
-            </LinearGradientBrush>
-        </Grid.Background>-->
+
 
         <Label 
             Text="به شهر همدان پایتخت تاریخ و تمدن خوش امدید"
@@ -19,50 +13,39 @@
 
         <Grid RowSpacing="20" ColumnSpacing="20" Margin="40"  RowDefinitions="auto,auto,auto" ColumnDefinitions="*,*" HorizontalOptions="Center" VerticalOptions="End">
 
-            <Button Grid.Column="1"  Text="گردشگری" Clicked="Explorer_Btn" WidthRequest="150" HeightRequest="60" >
-                <Button.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#A1662F" Offset="0.1"/>
-                        <GradientStop Color="#663300" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
+            <Frame Grid.Column="1" BackgroundColor="WhiteSmoke" >
+                <VerticalStackLayout>
+                    <ImageButton BackgroundColor="Transparent"  Grid.Column="1"  Source="explorer.png" Clicked="Explorer_Btn" WidthRequest="150" HeightRequest="60" />
+                    <Label Text="گردشگری" FontSize="Title" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
 
-            <!--<Button  Text="فرهنگ و مشاهیر"  WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Culture_notablesView">
-            <Button.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#663300" Offset="0.1"/>
-                    <GradientStop Color="#996633" Offset="1.0"/>
-                </LinearGradientBrush>
-            </Button.Background>
-            </Button>-->
 
-            <Button Grid.Column="1" Grid.Row="1" Text="رستوران ها"  WidthRequest="150" HeightRequest="60"  Clicked="Button_Clicked_Foods">
-                <Button.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#A1662F" Offset="0.1"/>
-                        <GradientStop Color="#663300" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
+            <Frame Grid.Column="1" Grid.Row="1"  BackgroundColor="WhiteSmoke" >
+                <VerticalStackLayout>
+                    <ImageButton BackgroundColor="Transparent"  Grid.Column="1"  Source="hotel.png" Clicked="Button_Clicked_Hotel" WidthRequest="150" HeightRequest="60" />
+                    <Label Text="هتل" FontSize="Title" HorizontalOptions="Center"/>
 
-            <Button Text="آب و هوا" Grid.Row="1"  WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Weather">
-                <Button.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#A1662F" Offset="0.1"/>
-                        <GradientStop Color="#663300" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
+                </VerticalStackLayout>
+            </Frame>
 
-            <Button Text="هتل ها" WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Hotel">
-                <Button.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#A1662F" Offset="0.1"/>
-                        <GradientStop Color="#663300" Offset="1.0"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
+            <!--<Frame Grid.Column="1" Grid.Row="1"  BackgroundColor="WhiteSmoke" >
+                <VerticalStackLayout>
+                    <ImageButton BackgroundColor="Transparent"  Grid.Column="1"  Source="hotel.png" Clicked="Button_Clicked_Hotel" WidthRequest="150" HeightRequest="60" />
+
+                    <ImageButton Grid.Row="1"  WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Weather"/>
+                    <Label Text="آب و هوا" FontSize="Title" HorizontalOptions="Center"/>
+
+
+                </VerticalStackLayout>
+            </Frame>-->
+            <Frame Grid.Column="0" Grid.Row="1"  BackgroundColor="WhiteSmoke" >
+
+                <VerticalStackLayout>
+                    <ImageButton WidthRequest="150" HeightRequest="60" Grid.Column="1"  Source="restorant.jpg" Clicked="Button_Clicked_Hotel"  BackgroundColor="Transparent"/>
+                    <Label Text="رستوران" FontSize="Title" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
 
         </Grid>
 
