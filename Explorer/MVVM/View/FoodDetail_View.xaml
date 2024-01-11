@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Explorer.MVVM.View.FoodDetail_View"
+             Title="جزيات رستوران"
+             FlowDirection="RightToLeft">
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Button Text="🤍"  Clicked="Button_Clicked" x:Name="btnliked" WidthRequest="100" FontSize="Large" BackgroundColor="Transparent"/>
+            <ImageButton Source="save.svg" x:Name="imgbookmark" WidthRequest="100" HeightRequest="50" Clicked="ImageButton_Clicked" BackgroundColor="Transparent"/>
+        </HorizontalStackLayout>
+        <CollectionView ItemsSource="{Binding Reviews}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout Margin="10">
+                        <Label Text="{Binding UserName}" FontSize="18" FontAttributes="Bold" />
+                        <Label Text="{Binding Comment}" FontSize="14" />
+                        <Label Text="{Binding Rating, StringFormat='امتیاز: {0:F1}'}" FontSize="14" />
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+                            <Label Text="⭐" FontSize="Large"/>
+                            <Label Text="⭐" FontSize="Large"/>
+                            <Label Text="⭐" FontSize="Large"/>
+                            <Label Text="☆" FontSize="Large"/>
+                            <Label Text="☆" FontSize="Large"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+</ContentPage>

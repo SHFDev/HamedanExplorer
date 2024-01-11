@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Explorer.MVVM.View.MainView"
+             Title="MainView">
+    <Grid>
+        <Image Source="bo_ali.jpg" Opacity="0.8" Aspect="AspectFill"/>
+        <!--<Grid.Background>
+        
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#663300" Offset="0.1"/>
+                <GradientStop Color="#996633" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>-->
+      
+        <Label 
+            Text="به شهر همدان پایتخت تاریخ و تمدن خوش امدید"
+            HorizontalOptions="Center"  TextColor="White" FontSize="20" />
+       
+        <Grid RowSpacing="20" ColumnSpacing="20" Margin="40"  RowDefinitions="auto,auto,auto" ColumnDefinitions="*,*" HorizontalOptions="Center" VerticalOptions="End">
+
+            <Button Grid.Column="1"  Text="گردشگری" Clicked="Explorer_Btn" WidthRequest="150" HeightRequest="60" >
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#663300" Offset="0.1"/>                                                                                                                                                                                                        
+                        <GradientStop Color="#996633" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <!--<Button  Text="فرهنگ و مشاهیر"  WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Culture_notablesView">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#663300" Offset="0.1"/>
+                    <GradientStop Color="#996633" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            </Button>-->
+
+            <Button Grid.Column="1" Grid.Row="1" Text="رستوران ها "   WidthRequest="150" HeightRequest="60"  Clicked="Button_Clicked_Foods">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#663300" Offset="0.1"/>
+                    <GradientStop Color="#996633" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            </Button>
+
+            <Button Text="آب و هوا"  Grid.Row="1"  WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Weather">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#663300" Offset="0.1"/>
+                    <GradientStop Color="#996633" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            </Button>     
+            
+            <Button Text="هتل ها "   WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Weather">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#663300" Offset="0.1"/>
+                    <GradientStop Color="#996633" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            </Button>
+
+        </Grid>
+    
+    </Grid>
+
+</ContentPage>

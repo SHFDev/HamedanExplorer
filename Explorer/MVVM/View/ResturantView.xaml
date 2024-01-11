@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Explorer.MVVM.View.ResturantView"
+            xmlns:page="clr-namespace:Explorer.MVVM.View"
+             Title="رستوران ها"
+             FlowDirection="RightToLeft">
+
+    <TabbedPage.Children>
+
+        <ContentPage Title="رستوران ها " IconImageSource="Resturant.png">
+           
+            <CollectionView ItemsSource="{Binding Restaurants}" x:Name="CVResdata">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Label Text="★" FontSize="Large"/>
+                                <Label Text="⭐" FontSize="Large"/>
+                                <Label Text="⭐" FontSize="Large"/>
+                                <Label Text="☆" FontSize="Large"/>
+                                <Label Text="☆" FontSize="Large"/>
+                            </StackLayout>
+                            <Button  Command="{Binding Path=BindingContext.Res,Source={Reference CVResdata}}"
+                             CommandParameter="{Binding .}" Text="{Binding Name}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="{Binding Rating, StringFormat='امتیاز: {0:F1}'}" FontSize="14" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+        </ContentPage>
+       
+        <!--<page:FavView  Title="مورد علاقه " IconImageSource="heart.png" />-->
+        <!--<page:bokmarke  Title="مورد علاقه " IconImageSource="bookmark.png" />-->
+        
+    </TabbedPage.Children>
+    
+
+</TabbedPage>
