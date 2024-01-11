@@ -21,30 +21,22 @@
             </Frame>
 
 
-            <Frame Grid.Column="1" Grid.Row="1"  BackgroundColor="WhiteSmoke" >
+            <Frame Grid.Column="1" Grid.Row="1"  BackgroundColor="WhiteSmoke">
+                
                 <VerticalStackLayout>
                     <ImageButton BackgroundColor="Transparent"  Grid.Column="1"  Source="hotel.png" Clicked="Button_Clicked_Hotel" WidthRequest="150" HeightRequest="60" />
                     <Label Text="هتل" FontSize="Title" HorizontalOptions="Center"/>
-
                 </VerticalStackLayout>
+                
             </Frame>
 
-            <!--<Frame Grid.Column="1" Grid.Row="1"  BackgroundColor="WhiteSmoke" >
-                <VerticalStackLayout>
-                    <ImageButton BackgroundColor="Transparent"  Grid.Column="1"  Source="hotel.png" Clicked="Button_Clicked_Hotel" WidthRequest="150" HeightRequest="60" />
-
-                    <ImageButton Grid.Row="1"  WidthRequest="150" HeightRequest="60" Clicked="Button_Clicked_Weather"/>
-                    <Label Text="آب و هوا" FontSize="Title" HorizontalOptions="Center"/>
-
-
-                </VerticalStackLayout>
-            </Frame>-->
             <Frame Grid.Column="0" Grid.Row="1"  BackgroundColor="WhiteSmoke" >
 
                 <VerticalStackLayout>
-                    <ImageButton WidthRequest="150" HeightRequest="60" Grid.Column="1"  Source="restorant.jpg" Clicked="Button_Clicked_Hotel"  BackgroundColor="Transparent"/>
+                    <ImageButton WidthRequest="150" HeightRequest="60" Grid.Column="1"  Source="restorant.jpg" Clicked="Button_Clicked_Foods"  BackgroundColor="Transparent"/>
                     <Label Text="رستوران" FontSize="Title" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
+                
             </Frame>
 
         </Grid>
