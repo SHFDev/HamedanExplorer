@@ -20,11 +20,11 @@ namespace Explorer.MVVM.ViewModel
         {
             // افزودن رستوران‌ها به لیست
 
-            Restaurants.Add(new Resturant_Model { Name = "رستوران عمارت", Rating = 4.5 });
-            Restaurants.Add(new Resturant_Model { Name = "باغ رستوران نعل اشکنه", Rating = 3.8 });
-            Restaurants.Add(new Resturant_Model { Name = "فست فود عطاویچ (شعبه همدان)", Rating = 3.8 });
-            Restaurants.Add(new Resturant_Model { Name = "سفره سرای آریاییان", Rating = 3.8 });
-            Restaurants.Add(new Resturant_Model { Name = "فست فود رضا آقاجون", Rating = 3.8 });
+            Restaurants.Add(new Resturant_Model { Name = "رستوران عمارت", Rating = 4.5, Star = "⭐⭐⭐⭐" });
+            Restaurants.Add(new Resturant_Model { Name = "باغ رستوران نعل اشکنه", Rating = 3.8, Star = "⭐⭐⭐⭐" });
+            Restaurants.Add(new Resturant_Model { Name = "فست فود عطاویچ", Rating = 3.8, Star = "⭐⭐⭐⭐" });
+            Restaurants.Add(new Resturant_Model { Name = "سفره سرای آریاییان", Rating = 3.8, Star = "⭐⭐⭐⭐⭐" });
+            Restaurants.Add(new Resturant_Model { Name = "فست فود رضا آقاجون", Rating = 3.8, Star = "⭐⭐⭐" });
         }
         public ICommand Res => new Command((p) =>
         {
