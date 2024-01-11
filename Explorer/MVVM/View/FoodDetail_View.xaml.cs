@@ -17,7 +17,7 @@ public partial class FoodDetail_View : ContentPage
     private void Button_Clicked(object sender, EventArgs e)
     {
         if (btnliked.Text == "❤")
-        {   
+        {
             btnliked.Text = "🤍";
         }
         else

@@ -18,8 +18,9 @@ namespace Explorer.MVVM.ViewModel
             // افزودن نمونه نظرات به لیست
 
 
-            Reviews.Add(new Review_Model { UserNames = resturant_Model.Name, Comment = "نظر اول", Rating = 4.5 });
-            Reviews.Add(new Review_Model { UserNames = "کاربر2", Comment = "نظر دوم", Rating = 3.8 });
+            Reviews.Add(new Review_Model { UserNames = "علی", Comment = "معمولی بود ", Rating = 4, Star = "⭐⭐⭐⭐" });
+            Reviews.Add(new Review_Model { UserNames = "نادر", Comment = "خیلی عالی بود ❤❤ ", Rating = 5, Star = "⭐⭐⭐⭐⭐" });
+            Reviews.Add(new Review_Model { UserNames = "کاظم", Comment = "سرد بود 😡😡😡", Rating = 1, Star = "⭐" });
             // ...
         }
 
