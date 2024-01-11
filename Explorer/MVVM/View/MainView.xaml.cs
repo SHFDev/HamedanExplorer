@@ -1,3 +1,5 @@
+using Explorer.MVVM.Views;
+
 namespace Explorer.MVVM.View;
 
 public partial class MainView : ContentPage
@@ -19,7 +21,7 @@ public partial class MainView : ContentPage
 
     private void Button_Clicked_Weather(object sender, EventArgs e)
     {
-
+     //   Navigation.PushAsync(new WeatherView());
     }
 
     private void Button_Clicked_Foods(object sender, EventArgs e)

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Weather.Converter
+namespace Explorer.Converter
 {
     public class CodeToWeatherConverter : IValueConverter
     {
