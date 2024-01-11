@@ -69,11 +69,26 @@
 
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <StackLayout>
-                                    <Image Source="{Binding TitleImageSource}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"
+
+                                <Border
+Margin="10,10,10,10"
+Background="LightGray"
+Opacity="0.8"
+HeightRequest="200"
+StrokeThickness="0"
+WidthRequest="180">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="15,15,15,15" />
+                                    </Border.StrokeShape>
+
+                                    <StackLayout>
+                                        <Image Source="{Binding TitleImageSource}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"
                                              WidthRequest="120" HeightRequest="150"  Margin="20,20,20,0"/>
-                                    <Label Text="{Binding Name}" HorizontalOptions="Center" VerticalOptions="Center"  Margin="20,10,20,0"/>
-                                </StackLayout>
+                                        <Label  Text="{Binding Name}" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"  Margin="20,5,20,0"/>
+                                    </StackLayout>
+                                </Border>
+
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -81,12 +96,11 @@
                 </VerticalStackLayout>
 
                 <!--#endregion-->
-
                 <!--#region مکان های مذهبی-->
 
                 <VerticalStackLayout Grid.Row="1" Spacing="20">
 
-                    <HorizontalStackLayout >
+                    <HorizontalStackLayout>
                         <Label 
                      Text="مکان های مذهبی"
                      VerticalOptions="Center" 
@@ -103,18 +117,30 @@
 
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <StackLayout>
-                                    <Image Source="{Binding TitleImageSource}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"
+
+                                <Border
+                                  Margin="10,0,10,10"
+                                  Background="LightGray"
+                                  Opacity="0.8"
+                                  HeightRequest="200"
+                                  StrokeThickness="0"
+                                  WidthRequest="180">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="15,15,15,15" />
+                                    </Border.StrokeShape>
+                                    <StackLayout>
+                                        <Image Source="{Binding TitleImageSource}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"
                                              WidthRequest="120" HeightRequest="150"  Margin="20,20,20,0"/>
-                                    <Label Text="{Binding Name}" HorizontalOptions="Center" VerticalOptions="Center"  Margin="20,10,20,0"/>
-                                </StackLayout>
+                                        <Label Text="{Binding Name}" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"  Margin="20,5,20,0"/>
+                                    </StackLayout>
+                                </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </VerticalStackLayout>
 
                 <!--#endregion-->
-
                 <!--#region مکان های فرهنگی گردشگری-->
 
                 <VerticalStackLayout Grid.Row="2">
@@ -122,25 +148,38 @@
                         <Label 
                     Text="مکان های فرهنگی گردشگری"
                     VerticalOptions="Center" 
-                    HorizontalOptions="Center" FontSize="16" Margin="10,0,0,0" />
+                    HorizontalOptions="Center" FontSize="16" Margin="10,0,0,10" />
                     </HorizontalStackLayout>
-
                     <CollectionView SelectionMode="Single" x:Name="Explorer_CollectionView" ItemsSource="{Binding Explorer}" SelectionChanged="Explorer_SelectionChanged" >
+
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Horizontal"/>
                         </CollectionView.ItemsLayout>
+
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <StackLayout >
-                                    <Image Source="{Binding TitleImageSource}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"
+
+                                <Border
+                                 Margin="10,10,10,10"
+                                Background="LightGray"
+                                Opacity="0.8"
+                                HeightRequest="200"
+                                StrokeThickness="0"
+                                WidthRequest="180">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="15,15,15,15" />
+                                    </Border.StrokeShape>
+                                    <StackLayout>
+                                        <Image Source="{Binding TitleImageSource}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"
                                              WidthRequest="120" HeightRequest="150"  Margin="20,20,20,0"/>
-                                    <Label Text="{Binding Name}" HorizontalOptions="Center" VerticalOptions="Center"  Margin="20,10,20,0"/>
-                                </StackLayout>
+                                        <Label Text="{Binding Name}" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"  Margin="20,5,20,0"/>
+                                    </StackLayout>
+                                </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </VerticalStackLayout>
-
                 <!--#endregion-->
             </Grid>
 
@@ -161,7 +200,7 @@
                             <DataTemplate>
                                 <!--<Frame>-->
 
-                                  <Image Margin="10,10,0,0"
+                                <Image Margin="10,10,0,0"
                                  Source="{Binding .}"
                                  VerticalOptions="Center" 
                                  HorizontalOptions="Center"

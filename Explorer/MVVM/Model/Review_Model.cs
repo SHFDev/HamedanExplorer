@@ -13,6 +13,5 @@ namespace Explorer.MVVM.Model
         public double Rating { get; set; }
         public string Star { get; set; }
 
-
     }
 }
