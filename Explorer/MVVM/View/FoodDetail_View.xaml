@@ -14,16 +14,16 @@
                 <DataTemplate>
 
                     <StackLayout Margin="10">
-                        <Label Text="{Binding UserName}" FontSize="18" FontAttributes="Bold" />
+                        <Label Text="{Binding UserName}" FontSize="18" FontAttributes="Bold"  />
                         <Label Text="{Binding Comment}" FontSize="14" />
                         <Label Text="{Binding Rating, StringFormat='امتیاز: {0:F1}'}" FontSize="14" />
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
 
-                            <Label Text="⭐" FontSize="Large"/>
-                            <Label Text="⭐" FontSize="Large"/>
+                            <Label Text="{Binding Star}" FontSize="Large" />
+                            <!--<Label Text="⭐" FontSize="Large"/>
                             <Label Text="⭐" FontSize="Large"/>
                             <Label Text="☆" FontSize="Large"/>
-                            <Label Text="☆" FontSize="Large"/>
+                            <Label Text="☆" FontSize="Large"/>-->
 
                         </StackLayout>
                     </StackLayout>

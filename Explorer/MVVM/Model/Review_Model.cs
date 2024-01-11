@@ -11,6 +11,8 @@ namespace Explorer.MVVM.Model
         public string UserNames { get; set; }
         public string Comment { get; set; }
         public double Rating { get; set; }
+        public string Star { get; set; }
+
 
     }
 }
