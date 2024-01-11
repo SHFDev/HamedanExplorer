@@ -65,6 +65,7 @@
 	  <PackageReference Include="CommunityToolkit.Maui" Version="2.0.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 	  <PackageReference Include="CustomSheets" Version="1.0.6" />
+	  <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
 	  <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
 	  <PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />

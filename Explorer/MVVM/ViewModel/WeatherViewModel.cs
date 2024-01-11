@@ -1,10 +1,9 @@
 ﻿using Explorer.MVVM.Model;
+using Newtonsoft.Json;
 using PropertyChanged;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Weather.MVVM.Models;
@@ -25,21 +24,27 @@ namespace Explorer.MVVM.ViewModel
         public WeatherViewModel()
         {
             client = new HttpClient();
+            FillData();
+        }
+        public void FillData()
+        {
+            var result = GetCoordinate();
+            GetWeatherData(result);
         }
 
-        public async Task<WeatherResult> GetCoordinate()
+        public WeatherResult GetCoordinate()
         {
-            var url = $"https://geocoding-api.open-meteo.com/v1/search?name=Hamedan";
-
-            var response = await client.GetAsync(url);
+            //Uri url = new("https://geocoding-api.open-meteo.com/v1/search?name=Hamedan");
+            var url = "https://geocoding-api.open-meteo.com/v1/search?name=Hamedan";
+            var response = client.GetAsync(url).Result;
 
             WeatherResult weatherResult = null;
 
             if (response.IsSuccessStatusCode)
             {
-                using (var responseStream = await response.Content.ReadAsStreamAsync())
+                using (var responseStream = response.Content.ReadAsStreamAsync())
                 {
-                    weatherResult = await JsonSerializer.DeserializeAsync<WeatherResult>(responseStream);
+                    weatherResult = JsonConvert.DeserializeObject<WeatherResult>(response.Content.ReadAsStringAsync().Result);
                 }
             }
 
@@ -47,21 +52,21 @@ namespace Explorer.MVVM.ViewModel
 
         }
 
-        public async Task GetWeatherData(WeatherResult result)
+        public void GetWeatherData(WeatherResult result)
         {
             var url = $"https://api.open-meteo.com/v1/forecast?latitude={result.results[0].latitude}&longitude={result.results[0].longitude}&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=Asia%2FTokyo";
 
-            var response = await client.GetAsync(url);
+            var response = client.GetAsync(url).Result;
 
             if (response.IsSuccessStatusCode)
             {
-                using (var responseStream = await response.Content.ReadAsStreamAsync())
+                using (var responseStream = response.Content.ReadAsStreamAsync())
                 {
-                    var data = await JsonSerializer.DeserializeAsync<WeatherData>(responseStream);
+                    var data = JsonConvert.DeserializeObject<WeatherData>(response.Content.ReadAsStringAsync().Result);
 
                     WeatherData = data;
 
-                    for(int i=0; i< WeatherData.daily.time.Length; i++)
+                    for (int i = 0; i < WeatherData.daily.time.Length; i++)
                     {
                         var daily2 = new Daily2()
                         {
