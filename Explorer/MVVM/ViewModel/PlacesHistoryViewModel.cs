@@ -162,8 +162,6 @@ namespace Explorer.MVVM.ViewModel
             Explorer.Add(Explorer_Model2);
             Explorer.Add(Explorer_Model3);
             Explorer.Add(Explorer_Model4);
-
-
         }
     }
 }
