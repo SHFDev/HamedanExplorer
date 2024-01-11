@@ -289,7 +289,7 @@
                 </VerticalStackLayout>
             </Grid>-->
 
-            <Button Margin="20,20,20,20" Text="نمایش رستوران در نقشه" BackgroundColor="DarkGray" TextColor="Black" FontSize="16"  />
+            <Button Margin="20,20,20,20" Text="نمایش رستوران در نقشه" BackgroundColor="DarkGray" Clicked="ShowMaplocation_Btn" TextColor="Black" FontSize="16"  />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

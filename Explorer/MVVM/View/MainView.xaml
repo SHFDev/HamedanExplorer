@@ -5,8 +5,8 @@
              Title="MainView">
     <Grid>
         <Image Source="bo_ali.jpg" Opacity="0.8" Aspect="AspectFill"/>
+  
         <!--<Grid.Background>
-        
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#663300" Offset="0.1"/>
                 <GradientStop Color="#996633" Offset="1.0"/>
