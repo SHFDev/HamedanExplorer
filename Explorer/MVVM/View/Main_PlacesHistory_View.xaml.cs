@@ -28,6 +28,26 @@ public partial class Main_PlacesHistory_View : ContentPage
         Title.Text = data.Name;
         ImageSource.ItemsSource = data.imageSource;
         DetailsSheet.OpenSheet();
+    }  
+    
+    private void Religious_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        //History_CollectionView.SelectedItem = null;
+        var data = (Places_History_Model)Religious_CollectionView.SelectedItem;
+        Description.Text = data.Description;
+        Title.Text = data.Name;
+        ImageSource.ItemsSource = data.imageSource;
+        DetailsSheet.OpenSheet();
+    }  
+    
+    private void Explorer_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        //History_CollectionView.SelectedItem = null;
+        var data = (Places_History_Model)Explorer_CollectionView.SelectedItem;
+        Description.Text = data.Description;
+        Title.Text = data.Name;
+        ImageSource.ItemsSource = data.imageSource;
+        DetailsSheet.OpenSheet();
     }
 
     private void Show_Location_Map(object sender, EventArgs e)
@@ -37,4 +57,6 @@ public partial class Main_PlacesHistory_View : ContentPage
         Navigation.PushAsync(new MapView(mapUrl));
         //History_CollectionView.SelectedItem = null;
     }
+
+   
 }

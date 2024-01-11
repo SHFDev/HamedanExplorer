@@ -8,15 +8,17 @@
 
     <TabbedPage.Children>
 
-        <ContentPage Title="رستوران ها " IconImageSource="Resturant.png">
-           
+        <page:FavView  Title="مورد علاقه " IconImageSource="heart.png" />
+
+        <ContentPage  Title="رستوران ها " IconImageSource="restorant.jpg">
+
             <CollectionView ItemsSource="{Binding Restaurants}" x:Name="CVResdata">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Margin="10">
                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                                 <Label Text="★" FontSize="Large"/>
-                                <Label Text="⭐" FontSize="Large"/>
+                                <Label Text="⭐" FontSize="Body"/>
                                 <Label Text="⭐" FontSize="Large"/>
                                 <Label Text="☆" FontSize="Large"/>
                                 <Label Text="☆" FontSize="Large"/>
@@ -28,13 +30,9 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
-
         </ContentPage>
-       
-        <!--<page:FavView  Title="مورد علاقه " IconImageSource="heart.png" />-->
-        <!--<page:bokmarke  Title="مورد علاقه " IconImageSource="bookmark.png" />-->
-        
+        <page:bookmarke  Title="ذخیره شده ها  " IconImageSource="bookmark.png" />
+
     </TabbedPage.Children>
     
 

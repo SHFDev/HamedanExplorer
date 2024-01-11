@@ -12,6 +12,7 @@ namespace Explorer.MVVM.Model
         public string Name { get; set; }
         public string Description { get; set; }
         public List<string> imageSource { get; set; }
+        public string TitleImageSource { get; set; }
         public Uri MapLocation { get; set; }
 
 
