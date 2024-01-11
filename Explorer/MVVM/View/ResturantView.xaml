@@ -10,7 +10,7 @@
 
         <page:FavView  Title="مورد علاقه " IconImageSource="heart.png" />
 
-        <ContentPage tab Title="رستوران ها " IconImageSource="restorant.jpg">
+        <ContentPage  Title="رستوران ها " IconImageSource="restorant.jpg">
 
             <CollectionView ItemsSource="{Binding Restaurants}" x:Name="CVResdata">
                 <CollectionView.ItemTemplate>
