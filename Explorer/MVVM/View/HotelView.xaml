@@ -46,7 +46,7 @@
                                     <Image
                                      HeightRequest="185"
                                      HorizontalOptions="Center"
-                                     Source="{Binding }" WidthRequest="150" Aspect="AspectFill"   />
+                                     Source="{Binding profimage}" WidthRequest="150" Aspect="AspectFill"   />
 
                                 </Border>
                                 

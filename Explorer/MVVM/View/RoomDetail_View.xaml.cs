@@ -6,10 +6,12 @@ namespace Explorer.MVVM.View;
 
 public partial class RoomDetail_View : ContentPage
 {
+    private string MapLocation;
     public RoomDetail_View(Hotel_Model resturant_Model)//این هاا یاد درست شه
     {
         InitializeComponent();
         BindingContext = new HotelDtlViewModel(resturant_Model);
+        MapLocation = resturant_Model.maploc;
     }
 
     private void Button_Clicked(object sender, EventArgs e)
@@ -54,7 +56,7 @@ public partial class RoomDetail_View : ContentPage
 
     private void ShowMaplocation_Btn(object sender, EventArgs e)
     {
-        var mapUrl = new Uri("https://neshan.org/maps/@34.791029,48.496008,14.2z,0p/places/600b924f7e4def6aa30d402ae20e3698");//باید اطلاعات از model رستوران ها ادرس را بخواند string ذخیره شود در مودل
+        var mapUrl = new Uri($"{MapLocation}");//باید اطلاعات از model رستوران ها ادرس را بخواند string ذخیره شود در مودل
         Navigation.PushAsync(new MapView(mapUrl));
     }
 }

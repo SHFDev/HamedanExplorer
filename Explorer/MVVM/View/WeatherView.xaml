@@ -4,8 +4,7 @@
              xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              xmlns:converter="clr-namespace:Explorer.Converter"
              x:Class="Explorer.MVVM.Views.WeatherView"
-            xmlns:page="clr-namespace:Explorer.MVVM.View"
-             
+             xmlns:page="clr-namespace:Explorer.MVVM.View"
              Title="آب و هوا شناسی">
 
     <ContentPage.Resources>

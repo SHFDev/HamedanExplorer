@@ -56,7 +56,9 @@
 	  <None Remove="Resources\Images\explorer.png" />
 	  <None Remove="Resources\Images\heart.png" />
 	  <None Remove="Resources\Images\hotel.png" />
+	  <None Remove="Resources\Images\h_boali.jpg" />
 	  <None Remove="Resources\Images\iconbuali.jpg" />
+	  <None Remove="Resources\Images\logoboali.png" />
 	  <None Remove="Resources\Images\mainpic.jpg" />
 	  <None Remove="Resources\Images\restorant.jpg" />
 	  <None Remove="Resources\Images\save.svg" />

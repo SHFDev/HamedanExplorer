@@ -15,6 +15,7 @@ namespace Explorer.MVVM.Model
         public  string  profimage { get; set; }
         public  string  about { get; set; }
         public  string  maploc { get; set; }
+        public  string  Address { get; set; }
 
     }
 }
