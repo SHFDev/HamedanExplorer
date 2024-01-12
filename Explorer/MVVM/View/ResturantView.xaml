@@ -8,7 +8,7 @@
 
     <TabbedPage.Children>
 
-        <page:FavView  Title="مورد علاقه " IconImageSource="heart.png" />
+    
 
         <ContentPage  Title="رستوران ها " IconImageSource="restorant.jpg">
 
@@ -35,7 +35,7 @@
                                 <Image
                              HeightRequest="130"
                              HorizontalOptions="Center"
-                             Source="test" WidthRequest="450" Aspect="AspectFill" Margin="0,0,0,70" />
+                             Source="{Binding titelimage}" WidthRequest="450" Aspect="AspectFill" Margin="0,0,0,70" />
                                 <!--Source="leclerc.jpg"-->
 
                                 <Frame
@@ -52,7 +52,7 @@
 
                                 <Button  Command="{Binding Path=BindingContext.Res,Source={Reference CVResdata}}"
                                  CommandParameter="{Binding .}" FontAttributes="Bold"
-                                         BackgroundColor="DarkGray" HeightRequest="70" Margin="0,130,0,0" />
+                                 BackgroundColor="DarkGray" HeightRequest="70" Margin="0,130,0,0" />
 
                                 <Label Text="{Binding Name}" FontSize="18"  Margin="60,155,0,0" TextColor="Wheat"/>
                                
@@ -79,7 +79,7 @@
 
                                <Image
                                 VerticalOptions="Center"
-                                Source="restorant.jpg" />
+                                Source="{Binding profimage}" />
 
                                 </Border>
 
@@ -99,7 +99,7 @@
 
 
         </ContentPage>
-
+       <page:FavView  Title="مورد علاقه " IconImageSource="heart.png" />
         <page:bookmarke  Title="ذخیره شده ها  " IconImageSource="bookmark.png" />
 
     </TabbedPage.Children>

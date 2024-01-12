@@ -20,7 +20,7 @@ namespace Explorer.MVVM.ViewModel
         {
             // افزودن رستوران‌ها به لیست
 
-            Restaurants.Add(new Resturant_Model { Name = "رستوران عمارت", Rating = 4.5, Star = "⭐⭐⭐⭐" });
+            Restaurants.Add(new Resturant_Model { Name = "رستوران عمارت", Rating = 4.5, Star = "⭐⭐⭐⭐",about= "این رستوران در زمان  های خیلی قدیم درست شد است خیلی خیلی قدیماین رستوران در زمان  های خیلی قدیم درست شد است خیلی خیلی قدیماین رستوران در زمان  های خیلی قدیم درست شد است خیلی خیلی قدیماین رستوران در زمان  های خیلی قدیم درست شد است خیلی خیلی قدیماین رستوران در زمان  های خیلی قدیم درست شد است خیلی خیلی قدیماین رستوران در زمان  های خیلی قدیم درست شد است خیلی خیلی قدیم ",Address="همدان خیابان مهدیه رو به روی عطا ویج" ,maploc= "https://neshan.org/maps/@34.790075,48.494531,18.1z,0p/places/600b924f7e4def6aa30d402ae20e3698" ,profimage="boali.png", titelimage="test.png"});
             Restaurants.Add(new Resturant_Model { Name = "باغ رستوران نعل اشکنه", Rating = 3.8, Star = "⭐⭐⭐⭐" });
             Restaurants.Add(new Resturant_Model { Name = "فست فود عطاویچ", Rating = 3.8, Star = "⭐⭐⭐⭐" });
             Restaurants.Add(new Resturant_Model { Name = "سفره سرای آریاییان", Rating = 3.8, Star = "⭐⭐⭐⭐⭐" });

@@ -44,7 +44,7 @@
                 <Image
              HeightRequest="220"
              HorizontalOptions="Center"
-             Source="test"/>
+             Source="{Binding resturant.titelimage }"/>
                 <!--Source="leclerc.jpg"-->
 
                 <Frame
@@ -71,9 +71,8 @@
                         <RoundRectangle CornerRadius="31,31,31,31" />
                     </Border.StrokeShape>
                     <Image
-             
-                 VerticalOptions="Center"
-                  Source="restorant.jpg"/>
+                     VerticalOptions="Center"
+                     Source="{Binding resturant.profimage}"/>
 
                     <!--<Image.Source>
                        <FontImageSource
@@ -90,7 +89,7 @@
              FontAttributes="Bold"
              FontSize="20"
              HorizontalOptions="Start"
-             Text="رستوران عمارت"
+             Text="{Binding resturant.Name}"
              VerticalOptions="End" />
             </Grid>
 
@@ -101,15 +100,13 @@
 
             </HorizontalStackLayout>
 
-
             <VerticalStackLayout>
-                <Label Text="رستوران عمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارترتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعماعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعمارتعتعمارت" FontSize="Subtitle" HorizontalOptions="Start" TextColor="Black" Margin="20"/>
+                <Label Text="{Binding resturant.about}" FontSize="Subtitle" HorizontalOptions="Start" TextColor="Black" Margin="20"/>
             </VerticalStackLayout>
 
-
             <!--<HorizontalStackLayout Margin="20,10,20,20">
-                <
-             Margin="0,0,10,0"
+                
+             <Margin="0,0,10,0"
              HeightRequest="20"
              VerticalOptions="Center"
              WidthRequest="20">
@@ -117,7 +114,8 @@
                         <FontImageSource
                      FontFamily="IconFontTypes"
                      Size="20"
-                     Color="White"  />
+                     Color="White"/>
+            
                     </Image.Source>
                 </>
 

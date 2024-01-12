@@ -11,4 +11,5 @@ public partial class ResturantView : TabbedPage
         BindingContext = new ResturantViewModel();
     }
 
+
 }

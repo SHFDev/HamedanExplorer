@@ -65,7 +65,7 @@ public partial class FoodDetail_View : ContentPage
 
     private void ShowMaplocation_Btn(object sender, EventArgs e)
     {
-        var mapUrl = new Uri("https://neshan.org/maps/@34.791029,48.496008,14.2z,0p/places/600b924f7e4def6aa30d402ae20e3698");//باید اطلاعات از model رستوران ها ادرس را بخواند string ذخیره شود در مودل
+        var mapUrl = new Uri($"{_resturant.maploc}");
         Navigation.PushAsync(new MapView(mapUrl));
     }
 }
