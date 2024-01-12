@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Explorer</ApplicationTitle>
+		<ApplicationTitle>همدان گرد</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.explorer</ApplicationId>
@@ -28,6 +28,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -64,6 +65,13 @@
 	  <None Remove="Resources\Images\restorant.jpg" />
 	  <None Remove="Resources\Images\save.svg" />
 	  <None Remove="Resources\Images\test.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="C:\Users\Aref\Downloads\icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 	<ItemGroup>
