@@ -9,10 +9,6 @@
             
             
             <Grid Grid.Row="1" RowDefinitions="0.6*,0.4*" ColumnDefinitions="*,*"> 
-               
-                
-                
-                
                 
             </Grid>
 
@@ -47,7 +43,7 @@
                 HorizontalOptions="Start"
                 StrokeThickness="0"
                 VerticalOptions="End"
-                Grid.Row="1"> 
+                Grid.Row="0"> 
                     
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="11,11,11,11" />
@@ -81,7 +77,30 @@
                         <Label Text="رستوران" FontSize="Title" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,5,10"/>
                     </Grid>
 
-                </Border>
+                </Border>   
+                
+                
+                <!--<Border
+                Margin="20,30"
+                Padding="0"
+                Background="LightGray"
+                HorizontalOptions="Start"
+                StrokeThickness="0"
+                VerticalOptions="End"
+                Grid.Column="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="11,11,11,11" />
+                    </Border.StrokeShape>
+                    <Grid>
+                        --><!--<ImageButton Source="explorer.png"/>--><!--
+                        <Button BackgroundColor="Transparent" Clicked="Button_Clicked_Foods" />
+                        
+                        <Image   Grid.Column="1"  Source="restoran.png"  WidthRequest="150" HeightRequest="190" Margin="0,0,3,30" />
+
+                        <Label Text="رستوران" FontSize="Title" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,5,10"/>
+                    </Grid>
+
+                </Border>-->
 
             </Grid>
             

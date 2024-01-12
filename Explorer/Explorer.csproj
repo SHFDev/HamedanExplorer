@@ -49,17 +49,27 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\amiran.jpeg" />
+	  <None Remove="Resources\Images\amiranlogo.png" />
+	  <None Remove="Resources\Images\babtaher.jpg" />
+	  <None Remove="Resources\Images\babtaher_img.png" />
 	  <None Remove="Resources\Images\boali.jpg" />
 	  <None Remove="Resources\Images\bookmark.png" />
 	  <None Remove="Resources\Images\bookmark.svg" />
 	  <None Remove="Resources\Images\bo_ali.jpg" />
+	  <None Remove="Resources\Images\emaratimg.png" />
+	  <None Remove="Resources\Images\emaratlogo.png" />
 	  <None Remove="Resources\Images\explorer.png" />
 	  <None Remove="Resources\Images\heart.png" />
 	  <None Remove="Resources\Images\hotel.png" />
 	  <None Remove="Resources\Images\h_boali.jpg" />
 	  <None Remove="Resources\Images\iconbuali.jpg" />
+	  <None Remove="Resources\Images\katibe.jpg" />
+	  <None Remove="Resources\Images\katibelogo.png" />
 	  <None Remove="Resources\Images\logoboali.png" />
 	  <None Remove="Resources\Images\mainpic.jpg" />
+	  <None Remove="Resources\Images\naleshkene.png" />
+	  <None Remove="Resources\Images\parsianlogo.png" />
 	  <None Remove="Resources\Images\restoran.png" />
 	  <None Remove="Resources\Images\restorant.jpg" />
 	  <None Remove="Resources\Images\save.svg" />
