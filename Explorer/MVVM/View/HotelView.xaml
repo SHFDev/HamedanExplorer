@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Explorer.MVVM.View.HotelView"
              xmlns:page="clr-namespace:Explorer.MVVM.View"
+            NavigationPage.HasNavigationBar="False"
              Title="هتل ها "
              FlowDirection="RightToLeft">
 
