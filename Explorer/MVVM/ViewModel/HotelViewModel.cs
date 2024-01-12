@@ -20,11 +20,11 @@ namespace Explorer.MVVM.ViewModel
         {
             // افزودن رستوران‌ها به لیست
 
-            Restaurants.Add(new Hotel_Model { Name = "هتل بوعلی همدان", Address="همدان ، میدان جهاد ", Rating = 4.5, Star = "⭐⭐⭐⭐" ,about="این هتل در تاریخ 1368 شمسی درست شده است",maploc= "https://neshan.org/maps/@34.784728,48.514918,15.9z,0p/places/9b0e28b66a4cd42738ef3467f924669b" ,profimage= "logoboali.png", titelimage= "h_boali.png" });
+            Restaurants.Add(new Hotel_Model { Name = "هتل بوعلی همدان", Address = "همدان ، میدان جهاد ", Rating = 4.5, Star = "⭐⭐⭐⭐", about = "این هتل در تاریخ 1368 شمسی درست شده است", maploc = "https://neshan.org/maps/@34.784728,48.514918,15.9z,0p/places/9b0e28b66a4cd42738ef3467f924669b", profimage = "logoboali.png", titelimage = "h_boali.png" });
             Restaurants.Add(new Hotel_Model { Name = "هتل بین المللی امیران همدان", Rating = 3.9, Star = "⭐⭐⭐⭐" });
             Restaurants.Add(new Hotel_Model { Name = "هتل پارسیان همدان", Rating = 3.8, Star = "⭐⭐⭐⭐" });
-            Restaurants.Add(new Hotel_Model { Name = "هتل کتیبه همدان", Rating = 3.8, Star = "⭐⭐⭐⭐" });
-            Restaurants.Add(new Hotel_Model { Name = "هتل باباطاهر همدان", Rating = 4.8, Star = "⭐⭐⭐⭐⭐", });
+            Restaurants.Add(new Hotel_Model { Name = "هتل کتیبه همدان", Rating = 3.8, Star = "⭐⭐⭐⭐", Offering = 20, HasOffer = true });
+            Restaurants.Add(new Hotel_Model { Name = "هتل باباطاهر همدان", Rating = 4.8, Star = "⭐⭐⭐⭐⭐", Offering = 13, HasOffer = true });
         }
         public ICommand Res => new Command((p) =>
         {

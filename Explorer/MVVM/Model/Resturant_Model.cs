@@ -16,6 +16,8 @@ namespace Explorer.MVVM.Model
         public string about { get; set; }
         public string maploc { get; set; }
         public string Address { get; set; }
+        public bool HasOffer { get; set; }
+        public double Offering { get; set; }
 
     }
 }
