@@ -29,10 +29,7 @@
                             </Border.StrokeShape>
 
                             <Grid>
-
-             
-
-                            <Border
+                                <Border
                                 Padding="0"
                                 Background="LightGray"
                                 HeightRequest="185"
@@ -49,7 +46,7 @@
                                     <Image
                                      HeightRequest="185"
                                      HorizontalOptions="Center"
-                                     Source="boali" WidthRequest="150" Aspect="AspectFill"   />
+                                     Source="{Binding }" WidthRequest="150" Aspect="AspectFill"   />
 
                                 </Border>
                                 
@@ -74,12 +71,8 @@
                                 <Label Text="{Binding Name,StringFormat=' آدرس :  {0}'}" FontSize="12"  Margin="175,60,0,0" TextColor="Wheat"/>
 
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="-191,130,0,-6">
-                                    <Label Text="⭐" FontSize="15"/>
-                                    <Label Text="⭐" FontSize="15"/>
-                                    <Label Text="⭐" FontSize="15"/>
-                                    <Label Text="⭐" FontSize="15"/>
-                                    <Label Text="⭐" FontSize="15"/>
-                                </StackLayout>
+                                    <Label Text="{Binding Star}" FontSize="18"  />
+                                    </StackLayout>
 
                                 <StackLayout Margin="10,140,10,0" >
 

@@ -76,22 +76,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="MVVM\View\RoomDetail_View.xaml.cs">
-	    <DependentUpon>RoomDetail_View.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="MVVM\View\Hotel_bookmarke.xaml.cs">
 	    <DependentUpon>Hotel_bookmarke.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="MVVM\View\Hotel_FavView.xaml.cs">
 	    <DependentUpon>Hotel_FavView.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="MVVM\View\HotelView.xaml.cs">
-	    <DependentUpon>HotelView.xaml</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MVVM\View\RoomDetail_View.xaml">
+	  <MauiXaml Update="MVVM\View\HotelView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\Hotel_bookmarke.xaml">
@@ -121,10 +115,10 @@
 	  <MauiXaml Update="MVVM\View\MapView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\View\HotelView.xaml">
+	  <MauiXaml Update="MVVM\View\ResturantView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\View\ResturantView.xaml">
+	  <MauiXaml Update="MVVM\View\RoomDetail_View.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\View\WeatherView.xaml">

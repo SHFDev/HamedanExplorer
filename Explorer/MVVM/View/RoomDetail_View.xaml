@@ -59,7 +59,6 @@
                         </LinearGradientBrush>
                     </Frame.Background>
                 </Frame>
-                
             <Border
              Margin="20,30"
              Padding="0"
@@ -89,14 +88,13 @@
 
                 </Border>
 
-                <Label
+            <Label
              Margin="20,0"
              FontAttributes="Bold"
              FontSize="20"
              HorizontalOptions="Start"
              Text="رستوران عمارت"
-             VerticalOptions="End" />
-                
+             VerticalOptions="End"/>
                 
             <Label
              Margin="20,10,10,60"

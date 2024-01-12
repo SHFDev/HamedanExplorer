@@ -8,11 +8,10 @@ public partial class HotelView : TabbedPage
     public HotelView()
     {
         InitializeComponent();
-        BindingContext = new ResturantViewModel();
+        BindingContext = new HotelViewModel();
     }
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-
     }
 }

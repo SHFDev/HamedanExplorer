@@ -6,12 +6,10 @@ namespace Explorer.MVVM.View;
 
 public partial class RoomDetail_View : ContentPage
 {
-    private Resturant_Model _resturant;
-    public RoomDetail_View(Resturant_Model resturant_Model)//این هاا یاد درست شه
+    public RoomDetail_View(Hotel_Model resturant_Model)//این هاا یاد درست شه
     {
         InitializeComponent();
-        BindingContext = new ReviewsViewModel(resturant_Model);
-        _resturant = resturant_Model;
+        BindingContext = new HotelDtlViewModel(resturant_Model);
     }
 
     private void Button_Clicked(object sender, EventArgs e)
@@ -23,15 +21,6 @@ public partial class RoomDetail_View : ContentPage
         else
         {
             btnliked.Text = "❤";
-            var liked = new LikedModel()
-            {
-                Id = 1,
-                ResturantID = 1,
-                ResturantName = _resturant.Name,
-                UserID = 1,
-
-            };
-            App.Liked.Add(liked);
         }
     }
 
