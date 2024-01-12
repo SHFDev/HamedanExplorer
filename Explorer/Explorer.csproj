@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\iconbuali.jpg" />
 	  <None Remove="Resources\Images\logoboali.png" />
 	  <None Remove="Resources\Images\mainpic.jpg" />
+	  <None Remove="Resources\Images\restoran.png" />
 	  <None Remove="Resources\Images\restorant.jpg" />
 	  <None Remove="Resources\Images\save.svg" />
 	  <None Remove="Resources\Images\test.jpg" />

@@ -3,7 +3,85 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Explorer.MVVM.View.MainView"
              Title="MainView">
-    <Grid>
+    <ScrollView>
+
+        <Grid RowDefinitions="0.4*,0.6*">
+
+
+
+
+
+            <Grid Grid.Row="1" RowDefinitions="*,*" ColumnDefinitions="*,*" BackgroundColor="WhiteSmoke">
+             
+                <Border
+                Margin="20,30"
+                Padding="0"
+                Background="LightGray"
+                HorizontalOptions="Start"
+                StrokeThickness="0"
+                VerticalOptions="End"
+                Grid.Column="1">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="11,11,11,11" />
+                    </Border.StrokeShape>
+                    <Grid>
+                        <!--<ImageButton Source="explorer.png"/>-->
+                        <Button BackgroundColor="Transparent" Clicked="Explorer_Btn"/>
+                        <Image   Grid.Column="1"  Source="explorer.png"  WidthRequest="150" HeightRequest="190" Margin="0,0,3,30" />
+                        
+                        <Label Text="گردشگری" FontSize="Title" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,5,10"/>
+                    </Grid>
+                    
+                </Border>
+            
+                <Border
+                Margin="20,30"
+                Padding="0"
+                Background="LightGray"
+                HorizontalOptions="Start"
+                StrokeThickness="0"
+                VerticalOptions="End"
+                Grid.Row="1"> 
+                    
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="11,11,11,11" />
+                    </Border.StrokeShape>
+                    <Grid>
+                        <!--<ImageButton Source="explorer.png"/>-->
+                        <Button BackgroundColor="Transparent" Clicked="Button_Clicked_Hotel"/>
+                        <Image   Grid.Column="1"  Source="hotel.png"  WidthRequest="150" HeightRequest="90" Margin="0,0,3,30" />
+                        <Label Text="هتل" FontSize="Title" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,5,10"/>
+
+                    </Grid>
+                    
+                </Border>
+                
+                <Border
+                Margin="20,30"
+                Padding="0"
+                Background="LightGray"
+                HorizontalOptions="Start"
+                StrokeThickness="0"
+                VerticalOptions="End"
+                Grid.Column="1" Grid.Row="1">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="11,11,11,11" />
+                    </Border.StrokeShape>
+                    <Grid>
+                        <!--<ImageButton Source="explorer.png"/>-->
+                        <Button BackgroundColor="Transparent" Clicked="Button_Clicked_Foods" />
+                        <Image   Grid.Column="1"  Source="restoran.png"  WidthRequest="150" HeightRequest="190" Margin="0,0,3,30" />
+
+                        <Label Text="رستوران" FontSize="Title" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,5,10"/>
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+            
+        </Grid>
+
+        <!--<Grid>
         <Image Source="bo_ali.jpg" Opacity="0.8" Aspect="AspectFill"/>
 
 
@@ -41,6 +119,6 @@
 
         </Grid>
 
-    </Grid>
-
+    </Grid>-->
+    </ScrollView>
 </ContentPage>
